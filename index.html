@@ -17,15 +17,21 @@
 
     <div class="mono-form">
         <h1>MONO</h1>
-            <form>
+            <form name="mono-form">
                 <div>
-                    <label><input type="radio" name="choice-action" value="increment">Збільшення балансу</label>
-                    <label><input type="radio" name="choice-action" value="reduction">Зменшення балансу</label>
+                    <label for="choice-increment">
+                        <input type="radio" id="choice-increment" name="choice-action" value="increment">
+                        Збільшення балансу
+                    </label>
+                    <label for="choice-reduction">
+                        <input type="radio" id="choice-reduction" name="choice-action" value="reduction">
+                        Зменшення балансу
+                    </label>
                 </div>
 
                 <div>
-                    <label for="value">Сума</label>
-                    <input type="number" name="value" id="value" placeholder="Enter your value">
+                    <label for="sum">Сума</label>
+                    <input type="number" name="sum" id="sum" placeholder="Enter your value">
                     <button type="submit">Зберегти</button>
                 </div>
 
